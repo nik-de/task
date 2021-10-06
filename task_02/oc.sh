@@ -1,0 +1,1 @@
+oc adm release info quay.io/openshift/okd:$ENV_VERS_OKD --commit-urls | grep machine-config-operator* | awk '{ print $2 }' >> resources/commit_id.txt
